@@ -139,7 +139,183 @@ Cisco_Network_Automation_Framework
 └── .gitignore
 ```
 
+---
 
+# ⚙️ Installation
+
+Follow these steps to set up the Cisco Network Automation Framework locally.
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/SASWATIMATHAN/Cisco_Network_Automation_Framework.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd Cisco_Network_Automation_Framework
+```
+
+---
+
+## 2. Create a Python Virtual Environment
+
+Create a virtual environment:
+
+```bash
+python3 -m venv venv
+```
+
+Activate it:
+
+### Ubuntu / Linux / WSL
+
+```bash
+source venv/bin/activate
+```
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+---
+
+## 3. Install Dependencies
+
+Install the required Python libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+Required packages include:
+
+- Netmiko
+- Paramiko
+- PyYAML
+- Jinja2
+
+---
+
+## 4. Configure Device Inventory
+
+Update the device information in:
+
+```
+inventory/routers.yml
+```
+
+Example:
+
+```yaml
+router1:
+  device_type: cisco_ios
+  host: 192.168.1.1
+  username: admin
+  password: password
+```
+
+---
+
+## 5. Verify Network Connectivity
+
+Ensure:
+
+- Cisco devices are reachable
+- SSH is enabled
+- Correct IP addresses are configured
+- GNS3 topology is running (if using simulation)
+
+---
+
+# ▶️ Usage
+
+The project contains multiple automation modules demonstrating different stages of network automation.
+
+## Basic SSH Connectivity
+
+### Paramiko Example
+
+```bash
+python3 first_paramiko.py
+```
+
+Establishes a basic SSH connection with a Cisco IOS device.
+
+---
+
+## Cisco Command Automation
+
+### Netmiko Command Execution
+
+```bash
+python3 send_command.py
+```
+
+Executes Cisco IOS show commands and retrieves device output.
+
+---
+
+## Configuration Deployment
+
+```bash
+python3 send_config_set.py
+```
+
+Sends configuration commands to Cisco devices.
+
+---
+
+## Multi-Device Automation
+
+```bash
+python3 multiple_devices.py
+```
+
+Automates tasks across multiple network devices.
+
+---
+
+## YAML Inventory Automation
+
+```bash
+python3 yaml_inventory.py
+```
+
+Reads device information from the YAML inventory file.
+
+---
+
+## Jinja2 Configuration Templates
+
+```bash
+python3 jinja2_template.py
+```
+
+Generates dynamic Cisco configurations using templates.
+
+---
+
+## Automated Backup
+
+```bash
+python3 router_backup.py
+```
+
+Collects and stores running configuration backups.
+
+---
+
+## Final Integrated Automation Framework
+
+```bash
+python3 final_project/automation.py
+```
+
+Runs the complete automation workflow combining inventory, templates, device communication, backups, and logging.
 
 # 🔄 Project Workflow
 
