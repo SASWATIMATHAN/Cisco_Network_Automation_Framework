@@ -580,3 +580,7 @@ Interested in:
 This project represents my hands-on learning journey in Python-based network automation, Cisco device management, and troubleshooting real networking environments.
 
 ⭐ If you find this project useful, feel free to explore and connect.
+
+# 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
