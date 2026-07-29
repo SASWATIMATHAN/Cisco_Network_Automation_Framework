@@ -402,15 +402,29 @@ The topology includes:
 - Remote automation from Ubuntu WSL environment
 - Automated configuration deployment and verification
 
-(Add GNS3 topology screenshot here)
+## 🌐 GNS3 Network Topology
+
+The automation framework was tested on a multi-router Cisco IOS topology created in GNS3.
+
+![GNS3 Topology](docs/screenshots/01_GNS3_Topology/Topology_initial.png)
 
 ---
+
+## 🔐 SSH Configuration
+
+Cisco IOS devices were configured for secure SSH access before automation.
+
+![SSH Configuration](docs/screenshots/02_SSH_Configuration/Router_R1_SSH_Config.png)
 
 ## 🔐 Netmiko Automation Output
 
 Netmiko was used to establish SSH sessions with Cisco IOS devices and automate configuration tasks.
 
-(Add Netmiko execution screenshot here)
+## ⚡ Netmiko + Jinja2 + PyYAML
+
+The framework uses YAML inventory files, Jinja2 templates, and Netmiko to automate Cisco IOS configuration deployment.
+
+![Netmiko Output](docs/screenshots/04_Netmiko_Jinja2_PyYaml/Netmiko_actual_output.png)
 
 Example tasks:
 - Device connection verification
@@ -424,7 +438,11 @@ Example tasks:
 
 Paramiko was explored for low-level SSH automation and configuration backup operations.
 
-(Add Paramiko output screenshot here)
+## 🐍 Paramiko Automation
+
+Paramiko was used to establish SSH sessions, execute commands, and perform configuration backups.
+
+![Paramiko Output](docs/screenshots/03_Paramiko/SSH_Connection_Using_Paramiko.png)
 
 Implemented tasks:
 - SSH session handling
@@ -432,6 +450,19 @@ Implemented tasks:
 - Running configuration backup
 - Error handling and debugging
 
+## 🚀 Final Project Execution
+
+The complete automation workflow integrates inventory management, template rendering, SSH connectivity, configuration deployment, verification, and reporting.
+
+![Final Project Output](docs/screenshots/05_Project_Structure/Final_Project_Actual_Output.png)
+
+## 🛠️ Troubleshooting
+
+Throughout development, various networking and SSH connectivity issues were documented and resolved.
+
+![Troubleshooting Notes](docs/screenshots/06_Troubleshooting/Notes_1.png)
+
+> 📁 **Complete laboratory documentation and additional screenshots are available in the [`docs/screenshots`](docs/screenshots) directory.**
 
 # 📚 Learning Journey
 
