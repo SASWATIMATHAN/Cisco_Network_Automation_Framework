@@ -141,50 +141,86 @@ Cisco_Network_Automation_Framework
 ```
 ---
 
+---
+
 # 🔄 Project Workflow
 
-The automation workflow follows a structured pipeline where device information is collected, configurations are generated, deployed, verified, and backed up.
+The automation framework follows a structured workflow that transforms device information into automated Cisco IOS configuration management.
+
+## 🚀 Automation Pipeline
 
 ```mermaid
 flowchart TD
 
-A[Device Inventory<br/>routers.yml] --> B[Read Device Information]
+A[📄 YAML Inventory<br>routers.yml] --> B[🔍 Read Device Information]
 
-B --> C[Generate Configuration<br/>Jinja2 Template]
+B --> C[📝 Generate Configuration<br>Jinja2 Template]
 
-C --> D[Establish SSH Connection<br/>Netmiko / Paramiko]
+C --> D[🔐 Establish SSH Connection<br>Netmiko / Paramiko]
 
-D --> E[Deploy Configuration<br/>Cisco IOS Device]
+D --> E[⚙️ Deploy Configuration<br>Cisco IOS Device]
 
-E --> F[Verify Device Status]
+E --> F[✅ Verify Device Status]
 
-F --> G[Collect Device Information]
+F --> G[📊 Collect Device Information]
 
-G --> H[Backup Running Configuration]
+G --> H[💾 Backup Running Configuration]
 
-H --> I[Save Logs and Outputs]
+H --> I[📁 Save Logs & Outputs]
 ```
 
-### Workflow Explanation
+---
 
-1. **Device Inventory**
-   - Device details such as hostname, IP address, username, and password are stored in a YAML inventory file.
+## 🔎 Workflow Stages
 
-2. **Configuration Generation**
-   - Jinja2 templates are used to create reusable Cisco IOS configuration files.
+| Stage | Process | Technology Used |
+|------|---------|----------------|
+| 1️⃣ | Device Inventory Management | PyYAML |
+| 2️⃣ | Configuration Generation | Jinja2 |
+| 3️⃣ | Secure Device Connection | Paramiko / Netmiko |
+| 4️⃣ | Configuration Deployment | Netmiko |
+| 5️⃣ | Device Verification | Cisco IOS Commands |
+| 6️⃣ | Backup & Logging | Python File Handling |
 
-3. **SSH Connectivity**
-   - Paramiko and Netmiko establish secure SSH connections with Cisco devices.
+---
 
-4. **Configuration Deployment**
-   - Generated configurations are automatically applied to network devices.
+## 📌 Workflow Explanation
 
-5. **Verification**
-   - Device information and command outputs are collected to confirm successful execution.
+### 1️⃣ Device Inventory
 
-6. **Backup and Logging**
-   - Running configurations and automation logs are saved for future reference.
+Device details such as:
 
+- Hostname
+- IP Address
+- Username
+- Password
+- Device Type
+
+are stored in a structured YAML inventory file.
+
+---
+
+### 2️⃣ Configuration Generation
+
+Jinja2 templates generate reusable Cisco IOS configuration files dynamically based on device requirements.
+
+---
+
+### 3️⃣ SSH Communication
+
+Paramiko and Netmiko establish secure SSH sessions with Cisco routers for command execution and configuration changes.
+
+---
+
+### 4️⃣ Configuration Deployment
+
+Generated configurations are automatically pushed to Cisco IOS devices.
+
+---
+
+### 5️⃣ Verification and Backup
+
+The framework collects device information, verifies execution status, stores logs, and creates configuration backups.
 ---
 
 ---
