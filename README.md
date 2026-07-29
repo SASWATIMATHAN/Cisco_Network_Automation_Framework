@@ -139,9 +139,7 @@ Cisco_Network_Automation_Framework
 └── .gitignore
 ```
 ```
----
 
----
 
 # 🔄 Project Workflow
 
@@ -169,7 +167,6 @@ G --> H[💾 Backup Running Configuration]
 H --> I[📁 Save Logs & Outputs]
 ```
 
----
 
 ## 🔎 Workflow Stages
 
