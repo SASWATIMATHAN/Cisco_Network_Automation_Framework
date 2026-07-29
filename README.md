@@ -41,15 +41,6 @@ The framework covers SSH automation, device configuration, inventory management,
 - 🔹 Expected outputs for every lab
 - 🔹 Final integrated automation framework
 
-## Technologies Used
-
-- Python 3
-- Paramiko
-- Netmiko
-- PyYAML
-- Jinja2
-- Cisco IOS
-- Ubuntu WSL
 
 ---
 
@@ -79,19 +70,74 @@ The framework covers SSH automation, device configuration, inventory management,
 - The repository follows a structured learning path from basic SSH scripting to a complete automation workflow.
 
 ---
+---
 
-## Project Structure
+# 🛠️ Technologies Used
+
+| Category | Technology | Purpose |
+|----------|------------|---------|
+| Programming Language | Python 3 | Automation scripting |
+| SSH Library | Paramiko | Low-level SSH connectivity |
+| Network Automation | Netmiko | Cisco IOS automation |
+| Inventory Management | PyYAML | Multi-device inventory |
+| Configuration Templates | Jinja2 | Dynamic configuration generation |
+| Network Devices | Cisco IOS Routers | Automation targets |
+| Network Simulator | GNS3 | Virtual network topology |
+| Virtualization | VMware Workstation | Running the GNS3 VM |
+| Development Environment | Ubuntu WSL | Python development and execution |
+| Code Editor | Visual Studio Code | Development and debugging |
+| Version Control | Git | Source code management |
+| Repository Hosting | GitHub | Project hosting and collaboration |
+
+---
+
+# 🧰 Development Environment
+
+The project was developed and tested using the following environment:
+
+- **Operating System:** Ubuntu on Windows Subsystem for Linux (WSL)
+- **Code Editor:** Visual Studio Code
+- **Network Simulator:** GNS3
+- **Virtual Machine:** GNS3 VM running on VMware Workstation
+- **Network Devices:** Cisco IOS Routers
+- **Python Version:** Python 3.x
+- **Version Control:** Git & GitHub
+
+# 📂 Project Structure
 
 ```text
 Cisco_Network_Automation_Framework
-├── inventory
-├── templates
-├── expected_outputs
-├── troubleshooting_notes
-├── backups
-├── logs
-├── final_project
-└── Python scripts
+│
+├── backups/                      # Configuration backup files
+├── docs/
+│   └── screenshots/              # README images and screenshots
+├── expected_outputs/             # Expected outputs for each lab
+├── final_project/
+│   └── automation.py             # Integrated automation project
+├── inventory/
+│   └── routers.yml               # Device inventory
+├── logs/
+│   └── automation.log            # Automation logs
+├── templates/
+│   └── cisco_config.j2           # Jinja2 configuration template
+├── troubleshooting_notes/        # Troubleshooting and debugging notes
+│
+├── first_paramiko.py
+├── paramiko_shell.py
+├── paramiko_config.py
+├── first_netmiko.py
+├── send_command.py
+├── send_config_set.py
+├── multiple_devices.py
+├── yaml_inventory.py
+├── jinja2_template.py
+├── router_backup.py
+├── device_info.py
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 ```
 
 ---
