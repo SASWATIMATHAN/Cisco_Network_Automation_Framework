@@ -147,24 +147,18 @@ The automation framework follows a structured workflow that transforms device in
 
 ## 🚀 Automation Pipeline
 
-```mermaid
-flowchart TD
+| **Step** | **Process** | **Description** |
+|----------|-------------|-----------------|
+| **1️⃣ Inventory Definition** | 📄 YAML Inventory (`routers.yml`) | Stores Cisco device details such as IP address, username, password, and device type. |
+| **2️⃣ Device Information Reading** | 🔍 Parse Device Data | Python scripts read and process device information from the YAML inventory file. |
+| **3️⃣ Configuration Generation** | 📝 Jinja2 Template Rendering | Dynamic Cisco IOS configuration files are generated using Jinja2 templates. |
+| **4️⃣ Secure Device Connection** | 🔐 SSH Connection (Netmiko / Paramiko) | Establishes secure SSH communication with Cisco IOS devices. |
+| **5️⃣ Configuration Deployment** | ⚙️ Cisco IOS Configuration Push | Automated configuration commands are deployed to network devices. |
+| **6️⃣ Device Verification** | ✅ Status Validation | Checks device connectivity and verifies successful configuration deployment. |
+| **7️⃣ Information Collection** | 📊 Device Data Gathering | Collects interface details, routing information, and device status. |
+| **8️⃣ Configuration Backup** | 💾 Running Configuration Backup | Saves the current running configuration for future recovery. |
+| **9️⃣ Logging & Reporting** | 📁 Output Management | Stores execution logs, reports, and automation results. |
 
-A[📄 YAML Inventory<br>routers.yml] --> B[🔍 Read Device Information]
-
-B --> C[📝 Generate Configuration<br>Jinja2 Template]
-
-C --> D[🔐 Establish SSH Connection<br>Netmiko / Paramiko]
-
-D --> E[⚙️ Deploy Configuration<br>Cisco IOS Device]
-
-E --> F[✅ Verify Device Status]
-
-F --> G[📊 Collect Device Information]
-
-G --> H[💾 Backup Running Configuration]
-
-H --> I[📁 Save Logs & Outputs]
 ```
 
 
