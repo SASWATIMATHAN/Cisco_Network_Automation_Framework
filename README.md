@@ -138,7 +138,7 @@ Cisco_Network_Automation_Framework
 ├── requirements.txt
 └── .gitignore
 ```
-```
+
 
 
 # 🔄 Project Workflow
@@ -159,7 +159,6 @@ The automation framework follows a structured workflow that transforms device in
 | **8️⃣ Configuration Backup** | 💾 Running Configuration Backup | Saves the current running configuration for future recovery. |
 | **9️⃣ Logging & Reporting** | 📁 Output Management | Stores execution logs, reports, and automation results. |
 
-```
 
 
 ## 🔎 Workflow Stages
