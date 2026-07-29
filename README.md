@@ -1,4 +1,16 @@
 # Cisco Network Automation Framework
+# 🚀 Cisco Network Automation Framework
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Cisco IOS](https://img.shields.io/badge/Cisco-IOS-1BA0D7)
+![Netmiko](https://img.shields.io/badge/Netmiko-Network_Automation-green)
+![Paramiko](https://img.shields.io/badge/Paramiko-SSH-orange)
+![PyYAML](https://img.shields.io/badge/PyYAML-YAML-red)
+![Jinja2](https://img.shields.io/badge/Jinja2-Templates-yellow)
+![Git](https://img.shields.io/badge/Git-Version_Control-F05032?logo=git)
+![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?logo=github)
+
+A modular Python-based network automation project for Cisco IOS devices using **Paramiko**, **Netmiko**, **PyYAML**, and **Jinja2**. This repository documents my learning journey from basic SSH connectivity to building an integrated automation workflow with inventory management, configuration templating, automated deployment, device information collection, and configuration backups.
 
 ## Overview
 
