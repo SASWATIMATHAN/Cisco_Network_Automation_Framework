@@ -1,0 +1,75 @@
+============================================================
+Stage 12: Complete Network Automation Project
+Script: final_project/automation.py
+============================================================
+
+Execution Command:
+
+python final_project/automation.py
+
+
+Expected Output:
+
+============================================================
+Cisco Network Automation Framework
+============================================================
+
+Processing R1...
+
+Configuration generated successfully.
+
+Connected successfully.
+
+Configuration deployed successfully.
+
+Running configuration backup completed.
+
+Backup saved:
+backups/R1_20260729_103000.txt
+
+Disconnected successfully.
+
+
+Processing R2...
+
+Configuration generated successfully.
+
+Connected successfully.
+
+Configuration deployed successfully.
+
+Running configuration backup completed.
+
+Backup saved:
+backups/R2_20260729_103005.txt
+
+Disconnected successfully.
+
+
+Processing R3...
+
+Configuration generated successfully.
+
+Connected successfully.
+
+Configuration deployed successfully.
+
+Running configuration backup completed.
+
+Backup saved:
+backups/R3_20260729_103010.txt
+
+Disconnected successfully.
+
+
+============================================================
+Automation process completed successfully.
+============================================================
+
+
+Status:
+
+Expected successful execution output.
+
+Actual execution may not complete because of the
+previously identified WSL-to-GNS3 SSH connectivity issue.

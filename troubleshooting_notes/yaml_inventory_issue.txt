@@ -1,0 +1,42 @@
+# Stage 10: PyYAML Inventory
+
+Script File:
+yaml_inventory.py
+
+
+Objective:
+
+To store Cisco device information in a YAML inventory file
+and load device details using Python PyYAML.
+
+
+Files Created:
+
+inventory/
+ └── routers.yml
+
+
+Issue Encountered:
+
+No execution issue encountered during YAML file loading.
+
+
+Note:
+
+The previous WSL-to-GNS3 SSH connectivity issue does not affect
+this stage because router connection is not performed.
+
+This stage only reads and processes inventory data.
+
+
+Learning Outcome:
+
+- Learned YAML inventory structure.
+- Learned PyYAML safe_load() function.
+- Understood separation of device data from Python code.
+- Prepared inventory structure for Netmiko automation.
+
+
+Status:
+
+Completed successfully.

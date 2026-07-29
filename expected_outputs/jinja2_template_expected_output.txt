@@ -1,0 +1,41 @@
+========================================
+Stage 11: Jinja2 Templates
+Script: jinja2_template.py
+========================================
+
+
+Execution Command:
+
+python jinja2_template.py
+
+
+Expected Output:
+
+
+Generated Cisco Configuration:
+--------------------------------
+
+
+hostname R1-NETWORK-AUTO
+
+
+interface GigabitEthernet0/0
+
+
+ip address 192.168.100.11 255.255.255.0
+
+
+no shutdown
+
+
+
+========================================
+Status:
+
+Expected successful execution output.
+
+Actual execution completed successfully.
+
+No router connectivity required because this stage
+only generates configuration using Jinja2 templates.
+========================================

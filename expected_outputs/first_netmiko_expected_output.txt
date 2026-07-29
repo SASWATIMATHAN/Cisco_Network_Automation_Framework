@@ -1,0 +1,27 @@
+========================================
+Stage 6: Netmiko Installation + First Connection
+Script: first_netmiko.py
+========================================
+
+Execution Command:
+
+python first_netmiko.py
+
+
+Expected Output:
+
+Connecting to Cisco router...
+
+Connection Successful!
+
+Disconnected Successfully.
+
+
+========================================
+Status:
+
+Expected successful execution output.
+
+Actual execution could not be completed due to the unresolved
+WSL-to-GNS3 SSH connectivity issue.
+========================================

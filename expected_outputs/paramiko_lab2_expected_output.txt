@@ -1,0 +1,45 @@
+=========================================
+PARAMIKO LAB 2 - INTERACTIVE SSH SESSION
+=========================================
+
+Connecting to Cisco Router...
+
+Connection Established Successfully!
+
+Opening Interactive Shell...
+
+Connected to:
+R1>
+
+Entering Privileged EXEC Mode...
+
+R1# terminal length 0
+
+Executing Verification Commands...
+
+-----------------------------------------
+R1# show ip interface brief
+
+Interface              IP-Address      OK? Method Status  Protocol
+FastEthernet0/0        192.168.100.11  YES manual up      up
+FastEthernet0/1        unassigned      YES unset  administratively down down
+Serial0/0              unassigned      YES unset  administratively down down
+Loopback0              1.1.1.1         YES manual up      up
+
+-----------------------------------------
+R1# show version
+
+Cisco Internetwork Operating System Software
+IOS (tm) C2600 Software
+Version 12.4
+
+System image file is:
+flash:c2600-adventerprisek9-mz.124-25d.bin
+
+-----------------------------------------
+
+Closing SSH Session...
+
+Disconnected Successfully.
+
+Program Completed Successfully.

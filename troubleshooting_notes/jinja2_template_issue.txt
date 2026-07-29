@@ -1,0 +1,43 @@
+# Stage 11: Jinja2 Templates
+
+Script File:
+jinja2_template.py
+
+
+Objective:
+
+To generate Cisco IOS configuration automatically
+using Jinja2 templates and Python.
+
+
+Files Used:
+
+templates/
+ └── cisco_config.j2
+
+
+Issue Encountered:
+
+No execution issue encountered.
+
+
+Note:
+
+This stage does not require SSH connectivity with
+Cisco routers.
+
+The script only processes the Jinja2 template and
+generates configuration output.
+
+
+Learning Outcome:
+
+- Learned Jinja2 template structure.
+- Learned variable substitution using {{ }} syntax.
+- Understood automated configuration generation.
+- Prepared configuration templates for Netmiko deployment.
+
+
+Status:
+
+Completed successfully.

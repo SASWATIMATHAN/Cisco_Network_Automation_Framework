@@ -1,0 +1,17 @@
+R1:
+  device_type: cisco_ios
+  ip: 192.168.100.11
+  username: admin
+  password: Cisco@123
+
+R2:
+  device_type: cisco_ios
+  ip: 192.168.100.12
+  username: admin
+  password: Cisco@123
+
+R3:
+  device_type: cisco_ios
+  ip: 192.168.100.13
+  username: admin
+  password: Cisco@123

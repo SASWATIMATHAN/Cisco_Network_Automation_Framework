@@ -1,0 +1,51 @@
+# Stage 7: Netmiko send_command()
+
+Script File:
+send_command.py
+
+
+Objective:
+
+To automate Cisco IOS show commands using Netmiko send_command().
+
+
+Commands Automated:
+
+- show version
+- show ip interface brief
+- show ip route
+
+
+Issue Encountered:
+
+The script could not establish SSH connection with the Cisco router.
+
+
+Root Cause:
+
+Existing WSL Ubuntu to GNS3 router connectivity issue prevented SSH communication.
+
+Since Netmiko uses SSH internally, the same connectivity problem affected execution.
+
+
+Troubleshooting Performed:
+
+1. Verified Netmiko installation.
+2. Verified router IP address.
+3. Verified SSH configuration.
+4. Checked Python virtual environment.
+5. Compared with previous Paramiko connection issue.
+
+
+Learning Outcome:
+
+- Learned Netmiko ConnectHandler().
+- Learned send_command() method.
+- Automated Cisco IOS command execution workflow.
+
+
+Status:
+
+Script completed successfully.
+
+Execution pending resolution of WSL-GNS3 SSH connectivity issue.

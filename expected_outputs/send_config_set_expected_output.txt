@@ -1,0 +1,49 @@
+========================================
+Stage 8: Netmiko send_config_set()
+Script: send_config_set.py
+========================================
+
+
+Execution Command:
+
+python send_config_set.py
+
+
+Expected Output:
+
+Connecting to Cisco router...
+
+Connected successfully!
+
+
+Configuration Output:
+
+
+configure terminal
+
+hostname R1-NETMIKO
+
+interface GigabitEthernet0/0
+
+ip address 192.168.100.11 255.255.255.0
+
+no shutdown
+
+
+Configuration completed successfully.
+
+
+Configuration saved successfully.
+
+
+Disconnected.
+
+
+========================================
+Status:
+
+Expected successful execution output.
+
+Actual execution blocked due to unresolved
+WSL-to-GNS3 SSH connectivity issue.
+========================================

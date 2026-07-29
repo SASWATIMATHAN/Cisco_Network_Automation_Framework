@@ -1,0 +1,32 @@
+PARAMIKO LAB 3
+
+Objective:
+Automate Cisco router configuration using Paramiko.
+
+Status:
+Python script completed successfully.
+
+Libraries Used:
+- Paramiko
+- Time
+
+Features Implemented:
+- SSHClient()
+- AutoAddPolicy()
+- SSH Authentication
+- invoke_shell()
+- Configuration command list
+- for loop
+- shell.send()
+- shell.recv()
+- SSH session close
+
+Execution Result:
+
+Traceback (most recent call last):
+...
+paramiko.ssh_exception.NoValidConnectionsError:
+Unable to connect to port 22 on 192.168.100.11
+
+Conclusion:
+The Python code is syntactically correct and follows the intended automation workflow. The failure occurred because the router could not be reached over SSH from the WSL environment. This indicates a network connectivity issue rather than a Python or Paramiko programming error.

@@ -1,0 +1,69 @@
+========================================
+Stage 5: Paramiko Mini Project
+Project: Automated Cisco Router Backup System
+Script: router_backup.py
+========================================
+
+
+Execution Command:
+
+python router_backup.py
+
+
+Expected Output:
+
+Connecting to router...
+
+Connected successfully.
+
+
+Executing command:
+
+terminal length 0
+
+show running-config
+
+
+Configuration collected successfully.
+
+
+Creating backup file...
+
+
+Backup saved successfully:
+
+router_backup_2026-07-24_10-30-45.txt
+
+
+SSH connection closed.
+
+
+Generated Backup File:
+
+router_backup_2026-07-24_10-30-45.txt
+
+
+Backup File Contents:
+
+Building configuration...
+
+Current configuration:
+
+version 15.2
+
+hostname R1
+
+!
+interface GigabitEthernet0/0
+ ip address 192.168.100.11 255.255.255.0
+ no shutdown
+!
+
+end
+
+
+========================================
+Status:
+Expected successful execution output.
+Actual execution blocked due to WSL-GNS3 SSH connectivity issue.
+========================================

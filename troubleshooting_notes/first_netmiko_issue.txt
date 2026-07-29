@@ -1,0 +1,41 @@
+# Stage 6: Netmiko Installation + First Connection
+
+Script File:
+first_netmiko.py
+
+Objective:
+
+To establish an SSH connection to a Cisco router using the Netmiko ConnectHandler() function.
+
+Issue Encountered:
+
+The script was unable to establish an SSH connection with the Cisco router.
+
+Observed Behavior:
+
+The connection attempt timed out due to the existing network connectivity issue between Ubuntu WSL and the GNS3 router.
+
+Root Cause:
+
+The WSL-to-GNS3 SSH connectivity issue encountered during the Paramiko labs continues to affect Netmiko since Netmiko also uses SSH for communication.
+
+Troubleshooting Performed:
+
+1. Verified Netmiko installation in the Python virtual environment.
+2. Verified router IP address.
+3. Verified SSH configuration on the Cisco router.
+4. Confirmed username and password were correct.
+5. Verified Python script syntax.
+6. Compared the behavior with previous Paramiko connection attempts.
+
+Learning Outcome:
+
+- Learned how to use the ConnectHandler() function.
+- Understood the basic structure of a Netmiko connection script.
+- Confirmed that Netmiko relies on SSH connectivity similar to Paramiko.
+
+Status:
+
+Script developed successfully.
+
+Execution could not be completed due to the unresolved WSL-to-GNS3 SSH connectivity issue.

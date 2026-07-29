@@ -1,0 +1,74 @@
+========================================
+Lab 4: Device Information Collection
+Script: device_info.py
+========================================
+
+
+Execution Command:
+
+python device_info.py
+
+
+Expected Output:
+
+Connecting to router...
+
+SSH connection established successfully.
+
+
+Collecting device information...
+
+
+Command Executed:
+show version
+
+
+Output:
+
+Cisco IOS Software, C2900 Software
+Version 15.2(4)M
+
+
+Router Hostname:
+R1
+
+
+Command Executed:
+show ip interface brief
+
+
+Output:
+
+Interface              IP-Address       Status       Protocol
+
+GigabitEthernet0/0     192.168.100.11  up           up
+GigabitEthernet0/1     unassigned      administratively down
+
+
+Command Executed:
+show running-config
+
+
+Output:
+
+Building configuration...
+
+Current configuration:
+
+hostname R1
+
+interface GigabitEthernet0/0
+ ip address 192.168.100.11 255.255.255.0
+ no shutdown
+
+
+Device information collection completed successfully.
+
+
+SSH connection closed.
+
+========================================
+Status:
+Expected successful execution output.
+Actual execution blocked due to WSL-GNS3 SSH connectivity issue.
+========================================

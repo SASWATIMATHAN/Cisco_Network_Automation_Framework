@@ -1,0 +1,79 @@
+========================================
+Stage 9: Multiple Device Automation
+Script: multiple_devices.py
+========================================
+
+
+Execution Command:
+
+python multiple_devices.py
+
+
+Expected Output:
+
+
+Connecting to 192.168.100.11
+
+192.168.100.11 connected successfully
+
+
+Executing command:
+
+show ip interface brief
+
+
+Interface              IP-Address        Status     Protocol
+
+GigabitEthernet0/0     192.168.100.11   up         up
+
+
+192.168.100.11 disconnected
+
+
+
+Connecting to 192.168.100.12
+
+192.168.100.12 connected successfully
+
+
+Executing command:
+
+show ip interface brief
+
+
+Interface              IP-Address        Status     Protocol
+
+GigabitEthernet0/1     192.168.100.12   up         up
+
+
+192.168.100.12 disconnected
+
+
+
+Connecting to 192.168.100.13
+
+192.168.100.13 connected successfully
+
+
+Executing command:
+
+show ip interface brief
+
+
+Interface              IP-Address        Status     Protocol
+
+GigabitEthernet0/0     192.168.100.13   up         up
+
+
+192.168.100.13 disconnected
+
+
+
+========================================
+Status:
+
+Expected successful execution output.
+
+Actual execution blocked due to unresolved
+WSL-to-GNS3 SSH connectivity issue.
+========================================

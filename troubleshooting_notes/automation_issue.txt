@@ -1,0 +1,70 @@
+# Stage 12: Complete Network Automation Project
+
+Script File:
+
+final_project/automation.py
+
+
+Objective:
+
+To integrate all previously developed automation modules into
+a single Cisco Network Automation Framework.
+
+
+Integrated Components:
+
+• PyYAML Inventory
+• Jinja2 Configuration Templates
+• Netmiko SSH Connectivity
+• Configuration Deployment
+• Running Configuration Backup
+• Logging
+
+
+Issue Encountered:
+
+SSH connections to Cisco routers could not be established.
+
+
+Observed Behaviour:
+
+Configuration generation completed successfully.
+
+Connection attempts to routers failed because TCP
+connections on port 22 could not be established.
+
+
+Root Cause:
+
+Previously identified WSL Ubuntu to GNS3 router
+network connectivity issue.
+
+
+Troubleshooting Performed:
+
+• Verified inventory file
+• Verified Jinja2 template
+• Verified Netmiko installation
+• Verified router IP addresses
+• Verified SSH configuration
+• Compared behaviour with previous Paramiko stages
+
+
+Learning Outcome:
+
+• Integrated multiple Python libraries into one project.
+
+• Learned complete automation workflow from inventory
+  to configuration deployment.
+
+• Understood modular project organisation.
+
+• Developed a reusable Cisco Network Automation Framework.
+
+
+Status:
+
+Framework completed successfully.
+
+Router deployment could not be demonstrated because of
+the unresolved WSL-to-GNS3 connectivity issue.

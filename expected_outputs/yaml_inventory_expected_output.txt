@@ -1,0 +1,52 @@
+========================================
+Stage 10: PyYAML Inventory
+Script: yaml_inventory.py
+========================================
+
+
+Execution Command:
+
+python yaml_inventory.py
+
+
+Expected Output:
+
+
+Router Name: R1
+
+IP Address: 192.168.100.11
+
+Username: admin
+
+------------------------------
+
+
+Router Name: R2
+
+IP Address: 192.168.100.12
+
+Username: admin
+
+------------------------------
+
+
+Router Name: R3
+
+IP Address: 192.168.100.13
+
+Username: admin
+
+------------------------------
+
+
+YAML inventory loaded successfully.
+
+
+========================================
+Status:
+
+Expected successful execution output.
+
+Actual execution completed because YAML
+processing does not require router SSH connectivity.
+========================================

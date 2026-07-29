@@ -1,0 +1,63 @@
+========================================
+Stage 7: Netmiko send_command()
+Script: send_command.py
+========================================
+
+
+Execution Command:
+
+python send_command.py
+
+
+Expected Output:
+
+Connecting to Cisco router...
+
+Connected successfully!
+
+
+==================================================
+Executing command: show version
+==================================================
+
+Cisco IOS Software, Version 15.2
+
+Router:
+R1
+
+System uptime:
+Several days
+
+
+==================================================
+Executing command: show ip interface brief
+==================================================
+
+Interface              IP-Address        Status     Protocol
+
+GigabitEthernet0/0     192.168.100.11   up         up
+GigabitEthernet0/1     unassigned       down       down
+
+
+==================================================
+Executing command: show ip route
+==================================================
+
+Gateway of last resort is not set
+
+Connected Routes:
+
+C 192.168.100.0/24 is directly connected
+
+
+Disconnected successfully.
+
+
+========================================
+Status:
+
+Expected successful execution output.
+
+Actual execution blocked due to unresolved
+WSL-to-GNS3 SSH connectivity issue.
+========================================

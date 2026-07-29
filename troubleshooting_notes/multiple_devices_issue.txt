@@ -1,0 +1,62 @@
+# Stage 9: Multiple Device Automation
+
+Script File:
+multiple_devices.py
+
+
+Objective:
+
+To automate multiple Cisco routers (R1, R2, R3)
+using a single Netmiko Python script.
+
+
+Automation Performed:
+
+- Maintained multiple device information in a Python list.
+- Connected to each router using ConnectHandler().
+- Executed show ip interface brief command.
+- Disconnected after collecting output.
+
+
+Issue Encountered:
+
+TCP connection to all Cisco routers failed.
+
+Observed Error:
+
+TCP connection to device failed.
+
+Device settings:
+cisco_ios 192.168.100.x:22
+
+
+Root Cause:
+
+Existing WSL Ubuntu to GNS3 router SSH connectivity issue.
+
+The routers are not reachable from the WSL environment on SSH port 22.
+
+
+Troubleshooting Performed:
+
+1. Verified Netmiko installation.
+2. Verified device IP addresses.
+3. Checked SSH configuration.
+4. Tested previous Paramiko connectivity.
+5. Confirmed Python automation logic.
+
+
+Learning Outcome:
+
+- Learned multiple device automation.
+- Learned looping through device dictionaries.
+- Understood scalable network automation workflow.
+
+
+Status:
+
+Script completed successfully.
+
+Execution blocked due to unresolved WSL-GNS3 SSH connectivity issue.
+
+Netmiko module completed.

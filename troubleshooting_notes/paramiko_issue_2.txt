@@ -1,0 +1,58 @@
+Paramiko Lab 1: SSH Connection Test using Paramiko
+
+Python script:
+first_paramiko.py
+
+Objective:
+To establish an SSH connection from Python (WSL Ubuntu) to Cisco R1 using Paramiko and execute Cisco IOS commands.
+
+Execution command:
+
+python first_paramiko.py
+
+
+Actual Output:
+
+(venv) samlinux@MATHAN:~/network_automation/Network_Automation_Lab_01$ python first_paramiko.py
+
+Traceback (most recent call last):
+
+File "/home/samlinux/network_automation/Network_Automation_Lab_01/first_paramiko.py", line 11, in <module>
+    ssh.connect(
+
+File "/home/samlinux/network_automation/venv/lib/python3.12/site-packages/paramiko/client.py", line 407, in connect
+    raise NoValidConnectionsError(errors)
+
+paramiko.ssh_exception.NoValidConnectionsError:
+
+[Errno None] Unable to connect to port 22 on 192.168.100.11
+
+
+Analysis:
+
+The Python script executed successfully and Paramiko library was imported correctly.
+
+The failure occurred during the SSH connection stage.
+
+Target Device:
+Cisco Router R1
+
+IP Address:
+192.168.100.11
+
+SSH Port:
+22
+
+
+Reason:
+
+The WSL Ubuntu environment was unable to establish an SSH connection to the Cisco router running inside the GNS3 topology.
+
+The issue is related to network reachability/connectivity between WSL and GNS3 router, not with the Python or Paramiko script.
+
+
+Conclusion:
+
+Paramiko installation and Python code were verified successfully.
+
+SSH connectivity between WSL and GNS3 router needs to be resolved before successful command execution.

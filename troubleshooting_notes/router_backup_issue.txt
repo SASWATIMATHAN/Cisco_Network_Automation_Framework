@@ -1,0 +1,76 @@
+# Stage 5: Paramiko Mini Project
+
+Project:
+Automated Cisco Router Backup System
+
+
+Script File:
+router_backup.py
+
+
+Objective:
+
+To automate Cisco router configuration backup using Python Paramiko.
+
+The script performs:
+- SSH connection to Cisco router
+- Execution of show running-config command
+- Collection of configuration output
+- Creation of timestamp-based backup file
+
+
+Issue Encountered:
+
+The script execution was blocked due to the existing WSL Ubuntu to GNS3 router SSH connectivity issue.
+
+During execution, Paramiko was unable to establish SSH connection with the router.
+
+Observed Error:
+
+KeyboardInterrupt while waiting during:
+
+ssh.connect()
+
+
+Root Cause:
+
+The issue is related to network communication between Ubuntu WSL and the GNS3 router management network.
+
+The connection was not reaching the SSH service on the router.
+
+This issue was persistent from the beginning of the Paramiko labs.
+
+
+Troubleshooting Performed:
+
+1. Verified router management IP configuration.
+
+2. Checked router SSH configuration:
+   - IP domain-name configured
+   - Local username created
+   - RSA keys generated
+   - SSH version 2 enabled
+   - VTY lines configured for SSH login
+
+3. Checked WSL network configuration.
+
+4. Tested connectivity between WSL and GNS3 environment.
+
+5. Verified Python virtual environment and Paramiko installation.
+
+
+Learning Outcome:
+
+- Learned automated router backup workflow.
+- Understood SSH-based configuration retrieval.
+- Learned timestamp-based file creation in Python.
+- Practiced troubleshooting network automation connectivity issues.
+
+
+Status:
+
+Script development completed.
+
+Execution blocked due to unresolved WSL-GNS3 SSH connectivity issue.
+
+Paramiko module completed successfully.

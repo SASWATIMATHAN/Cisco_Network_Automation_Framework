@@ -1,0 +1,64 @@
+# Lab 4: Device Information Collection using Paramiko
+
+File:
+device_info.py
+
+Objective:
+To collect Cisco device information automatically using Python Paramiko SSH connection.
+
+Information to Collect:
+- Hostname
+- IOS Version
+- Interface Status
+- Running Configuration
+
+
+Issue Encountered:
+
+The Python script was unable to establish SSH connection with the Cisco router from Ubuntu WSL environment.
+
+Observed Issue:
+- SSH connection failed between WSL Ubuntu and GNS3 router.
+- Device information commands could not be executed.
+
+
+Troubleshooting Performed:
+
+1. Verified router IP address:
+   show ip interface brief
+
+2. Verified SSH configuration:
+   - Domain name configured
+   - Local username created
+   - RSA keys generated
+   - SSH version 2 enabled
+   - VTY lines configured for SSH access
+
+3. Tested network connectivity:
+   - Checked WSL IP address
+   - Checked routing information
+   - Tested ping connectivity
+
+4. Verified Python environment:
+   - Virtual environment activated
+   - Paramiko installed successfully
+   - Script syntax checked
+
+
+Possible Cause:
+
+SSH communication between Ubuntu WSL and GNS3 router management network was not established properly.
+
+Router configuration and Python script logic were correct, but connectivity required further troubleshooting.
+
+
+Learning Outcome:
+
+- Learned how Paramiko connects with network devices.
+- Understood SSH-based device information collection.
+- Practiced troubleshooting automation connectivity issues.
+
+
+Status:
+
+Pending resolution of SSH connectivity issue between WSL and GNS3 router.

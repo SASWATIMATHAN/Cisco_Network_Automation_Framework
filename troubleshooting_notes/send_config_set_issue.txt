@@ -1,0 +1,52 @@
+# Stage 8: Netmiko send_config_set()
+
+Script File:
+send_config_set.py
+
+
+Objective:
+
+To automate Cisco router configuration changes using Netmiko send_config_set().
+
+
+Configurations Automated:
+
+- Hostname configuration
+- Interface configuration
+- IP address assignment
+- Interface activation using no shutdown
+
+
+Issue Encountered:
+
+The script was unable to establish SSH connection with the Cisco router.
+
+
+Root Cause:
+
+The existing WSL Ubuntu to GNS3 router connectivity issue prevented SSH communication.
+
+Netmiko configuration automation could not be executed because the device connection was not established.
+
+
+Troubleshooting Performed:
+
+1. Verified Netmiko installation.
+2. Verified Python virtual environment.
+3. Checked router IP address.
+4. Verified SSH configuration.
+5. Compared with previous Paramiko connectivity issue.
+
+
+Learning Outcome:
+
+- Learned send_config_set() method.
+- Understood automated Cisco IOS configuration workflow.
+- Learned how multiple configuration commands can be sent together.
+
+
+Status:
+
+Script developed successfully.
+
+Execution pending resolution of WSL-GNS3 SSH connectivity issue.
