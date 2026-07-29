@@ -390,6 +390,48 @@ The framework collects device information, verifies execution status, stores log
 ---
 
 ---
+# 📸 Screenshots & Demonstration
+
+## 🌐 GNS3 Network Topology
+
+The automation framework was tested using a Cisco IOS topology created in GNS3.
+
+The topology includes:
+- Cisco IOS routers configured for SSH access
+- Management IP addressing
+- Remote automation from Ubuntu WSL environment
+- Automated configuration deployment and verification
+
+(Add GNS3 topology screenshot here)
+
+---
+
+## 🔐 Netmiko Automation Output
+
+Netmiko was used to establish SSH sessions with Cisco IOS devices and automate configuration tasks.
+
+(Add Netmiko execution screenshot here)
+
+Example tasks:
+- Device connection verification
+- Configuration deployment
+- Command execution
+- Output collection
+
+---
+
+## 🐍 Paramiko Automation Output
+
+Paramiko was explored for low-level SSH automation and configuration backup operations.
+
+(Add Paramiko output screenshot here)
+
+Implemented tasks:
+- SSH session handling
+- Command execution
+- Running configuration backup
+- Error handling and debugging
+
 
 # 📚 Learning Journey
 
@@ -448,8 +490,62 @@ Through this project, the following technical skills were developed:
 - 🔧 Debugging and troubleshooting network connectivity issues
 - 📂 Git and GitHub workflow management
 
+# 🛠️ Troubleshooting & Challenges
+
+During the development of this project, several networking and automation challenges were encountered and resolved through systematic debugging.
+
+| **Challenge** | **Problem Observed** | **Solution / Learning** |
+|--------------|---------------------|------------------------|
+| 🔌 SSH Connectivity Issues | Unable to establish SSH connection from automation scripts to Cisco devices | Verified SSH configuration, device reachability, firewall settings, and management connectivity. |
+| 🌐 GNS3 and WSL Networking | Communication between GNS3 devices and Ubuntu WSL environment was challenging | Analysed network interfaces, VM connectivity, and adapted the testing approach. |
+| 🐧 WSL Environment Setup | Required separate Linux environment for automation development | Configured Ubuntu WSL with Python virtual environment and required libraries. |
+| 📦 Python Dependency Management | Multiple automation libraries were required | Installed and managed Netmiko, Paramiko, PyYAML, and Jinja2 inside a virtual environment. |
+| 🔐 Paramiko Connection Errors | Encountered SSH connection failures during automation testing | Debugged IP addressing, SSH availability, router configuration, and port accessibility. |
+| 📄 Configuration Backup Testing | Backup script required reliable device communication | Developed structured scripts for configuration collection and file storage. |
+
+## Key Learning Outcomes
+
+Through troubleshooting, this project improved understanding of:
+
+- Cisco IOS SSH configuration
+- Network connectivity debugging
+- Linux networking environment
+- Python-based network automation
+- Error analysis and documentation
+- Real-world automation workflow
+
+# 🚀 Future Roadmap
+
+Future improvements planned for this automation framework:
+
+| **Feature** | **Planned Enhancement** |
+|------------|------------------------|
+| 🤖 Ansible Integration | Extend automation using Ansible playbooks for multi-device management. |
+| ☁️ Cloud Deployment | Deploy automation workflows using AWS cloud infrastructure. |
+| 📊 Monitoring Dashboard | Create a web dashboard for device status and automation reports. |
+| 🔄 CI/CD Integration | Automate testing and deployment using GitHub Actions. |
+| 🔐 Improved Security | Implement encrypted credential management using Vault solutions. |
+| 📡 Multi-Vendor Support | Extend support beyond Cisco IOS devices. |
+
+
 ## Known Limitation
 
 The project could not demonstrate live configuration deployment because of a WSL-to-GNS3 SSH connectivity issue.
 
 The automation logic, project structure, and scripts were completed successfully.
+
+# 👩‍💻 Author
+
+**Saswati Anupama Mathan**
+
+M.Tech ECE (Communication)  
+Interested in:
+- Network Automation
+- Python Programming
+- Embedded Systems
+- Communication Systems
+- Cloud & DevOps Technologies
+
+This project represents my hands-on learning journey in Python-based network automation, Cisco device management, and troubleshooting real networking environments.
+
+⭐ If you find this project useful, feel free to explore and connect.
